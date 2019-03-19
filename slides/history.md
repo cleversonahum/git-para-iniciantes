@@ -38,4 +38,25 @@
   <h3 align="left">SCV Distribuído:</h3>
   <img src="img/history/scv-distr.png" style="background:none; border:none; box-shadow:none;" />
   <p>Fonte: <a href="https://git-scm.com/book/en/v1/Getting-Started-About-Version-Control">Git Website</a></p>
+
+
+  <h2>Linux e SVC</h2>
+  <img src="img/history/linux-logo.webp" style="background:none; border:none; box-shadow:none;" align="right" width="40%" height="40%" />
+  <p align="justify">De 1991 até 2002, a manutenção do Kernel linux e o controle foram feitos através de patches e arquivos. Em 2002, o projeto Linux kernel começa a utilizar um SVC Distribuído proprietário chamado BitKeeper.</p>
+
+
+  <h2>Nasce o Git</h2>
+  <p align="justify">Em 2005 a empresa que matinha o BitKeeper removeu a licença sem custos para manutenção do kernel Linux. A comunidade Linux liderada por Linus Torvald começam a planejar e a desenvolver o seu próprio sistema de versionamento, chamado Git.</p>
+  <img src="img/history/git-logo.png" style="background:none; border:none; box-shadow:none;" align="center" width="40%" height="40%" />
+
+
+  <h2>Objetivos do novo VCS:</h2>
+  <ul>
+    <li>Velocidade</li>
+    <li>Design Simples</li>
+    <li>Suporte a desenvolvimento não linear</li>
+    <li>Totalmente distribuído</li>
+    <li>Capaz de lidar com projetos grandes eficientemente</li>
+  </ul>
+
 </div>
