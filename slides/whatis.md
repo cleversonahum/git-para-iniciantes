@@ -17,12 +17,23 @@
 
 
   <h2>Como o Git trabalha?</h2>
-  <p align="justify">Outros SVCs como Subversion, Perforce e Bazaar, pensam nas informações como um grupo de arquivos e suas alterações ao longo do tempo (baseado em deltas). Já o Git pensa na informação como um conjunto de snapshots, cada alteração confirmada gera uma imagem de um determinado arquivo.</p>
+  <p align="justify">Outros SVCs como Subversion, Perforce e Bazaar, pensam nas informações como um grupo de arquivos e suas alterações ao longo do tempo (baseado em deltas). Já o Git pensa na informação como um conjunto de snapshots, cada alteração confirmada (commit) gera uma imagem de um determinado arquivo.</p>
 
 
   <h3 align="left">Deltas:</h3>
-  <img src="img/whatis/delta.png" style="background:none; border:none; box-shadow:none;" height="60%" width="60%"/>
+  <img src="img/whatis/delta.png" style="background:none; border:none; box-shadow:none;" height="50%" width="50%"/>
   <h3 align="left">Snapshots:</h3>
-  <img src="img/whatis/snapshot.png" style="background:none; border:none; box-shadow:none;" height="60%" width="60%"/>
+  <img src="img/whatis/snapshot.png" style="background:none; border:none; box-shadow:none;" height="50%" width="50%"/>
+
+
+  <h2>Integridade</h2>
+  <p align="justify">Tudo no Git passa por uma soma de verificação, dessa forma é impossível realizar uma alteração nos arquivos sem que o Git saiba.A soma de verificação utiliza o método de hash SHA-1 onde uma string de 40 caracteres hexadecimais é gerada baseado no conteúdo dos arquivos e diretórios. Um exemplo de hash SHA-1 é:</p>
+  <pre><code data-trim align="center">
+    10836e364ff8682ab695fc1f9edef1fd8b9c76ed
+	</code></pre>
+
+
+  <h2>Os 3 estágios de um arquivo</h2>
+  <img src="img/whatis/file-stages.png" style="background:none; border:none; box-shadow:none;" />
 
 </div>
