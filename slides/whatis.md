@@ -1,19 +1,27 @@
 <div>
 
   <h2>O que é Git?</h2>
-  É um sistema de controle de versionamento voltado para o desenvolvimento de software, com o intuito de controlar as mudanças em códigos ou em qualquer arquivo. É rápido, mantém a integridade dos arquivos, suporta desenvolvimento distribuído e não linear.
+  <p align="justify">É um sistema de controle de versionamento voltado para o desenvolvimento de software, com o intuito de controlar as mudanças em códigos ou em qualquer arquivo. É rápido, mantém a integridade dos arquivos, suporta desenvolvimento distribuído e não linear.</p>
 
 
   <h2>O que significa Git?</h2>
-  <p><blockquote cite="https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README">
+  <p align="justify"><blockquote cite="https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README">
   Git pode significar qualquer coisa, dependendo do seu humor:
   <ul>
     <li>3 letras aleatórias que não tinham sido usadas por comandos UNIX</li>
     <li>Estúpido/Desprezível (expressão)</li>
     <li>Rastreador de Informações Globais (Você está de bom humor)</li>
   </ul>
-  Um estúpido (mas extremamente rápido) gerenciador de conteudo de diretórios. Não faz muito, mas faz eficientemente.
+  Um estúpido (mas extremamente rápido) gerenciador de conteúdo de diretórios. Não faz muito, mas faz eficientemente.
   </blockquote>- Linus Torvalds</p>
+
+
+  <h2>Git x Git-hub|lab|bucket</h2>
+  <p align="justify">Git é o Sistema de controle de versão, enquanto que o github, gitlab e gitbucket são serviços para armazenamento de projetos Git. Os hubs oferecem ferramentas de administração de projetos e integração e desenvolvimento contínuo (CI/CD).</p>
+
+
+  <h3 align="left">Github</h3>
+  <img src="img/whatis/github.png" style="background:none; border:none; box-shadow:none;" />
 
 
   <h2>Como o Git trabalha?</h2>
