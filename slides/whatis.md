@@ -36,7 +36,7 @@
 
   <h2>Integridade</h2>
   <p align="justify">Tudo no Git passa por uma soma de verificação, dessa forma é impossível realizar uma alteração nos arquivos sem que o Git saiba.A soma de verificação utiliza o método de hash SHA-1 onde uma string de 40 caracteres hexadecimais é gerada baseado no conteúdo dos arquivos e diretórios. Um exemplo de hash SHA-1 é:</p>
-  <pre><code data-trim align="center">
+  <pre><code data-trim>
     10836e364ff8682ab695fc1f9edef1fd8b9c76ed
 	</code></pre>
 
