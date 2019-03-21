@@ -6,7 +6,7 @@
 
   <h3>Instalando o Git</h3>
   <p align="justify">Possui opção de instalação para Windows, Linux e MAC. Na maioria das distribuições Linux está disponível nos gerenciadores de pacote, bastando executar um comando como: </p>
-  <pre><code data-trim>
+  <pre style="white-space: pre-wrap;"><code data-trim>
   (ArchLinux) pacman -S git
   (Ubuntu) apt install git
   (Fedora) yum install git
@@ -15,7 +15,7 @@
 
   <h3>Inicializando um repositório Git</h3>
   <p align="justify">É necessário primeiramente criar uma pasta e após isso executar o comando <i>git init</i>, criando os arquivos necessários.</p>
-  <pre><code data-trim>
+  <pre style="white-space: pre-wrap;"><code data-trim>
   $ mkdir teste
   $ cd teste
   $ git init
@@ -39,7 +39,7 @@
 	</code></pre>
 
 
-  <h3>Adicionando arquivos para commit</h3>
+  <h3>Monitorando Arquivos</h3>
   <p align="justify">Ao alterarmos/deletarmos/modificarmos um arquivo é preciso realizar um commit para que as alterações sejam realizadas no repositório Git. Usando o comando <i>git status</i> é possível observar em qual dos 3 estágios possíveis estão os arquivos.</p>
   <pre style="white-space: pre-wrap;"><code data-trim>
   $ git status
@@ -57,5 +57,19 @@
   </pre></code>
 
 
-  
+  <h3>Relembrando os 3 estágios</h3>
+  <img src="img/whatis/file-stages.png" style="background:none; border:none; box-shadow:none;" />
+
+
+  <h3>Adicionando arquivos para área de "ensaio"</h3>
+  <p align="justify">Ao criar um arquivo que deseja adicionar ao repositório Git, é necessário usar o comando <i>git add &lt;Nome do arquivo ou . (todos arquivos)&gt;</i> para que os arquivos sejam adicionados a area de ensaio para o commit.</p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ git add teste
+  $ git status
+  On branch master
+  No commits yet
+  Changes to be committed:
+  (use "git rm --cached &lt;file&gt;..." to unstage)
+	new file: teste
+  </pre></code>
 </div>
