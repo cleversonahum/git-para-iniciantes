@@ -73,12 +73,24 @@
 	new file: teste
   </pre></code>
 
+
   <h3>Salvando alterações no repositório Git (Commit)</h3>
   <p align="justify">Para que as alterações adicionadas a área de ensaio sejam salvas no repositório Git de fato é necessário executar um <i>git commit</i></p>
   <pre style="white-space: pre-wrap;"><code data-trim>
-  git commit -m "Informações sobre a alteração realizadas nesse commit"
+  $ git commit -m "Informações sobre a alteração realizadas nesse commit"
   [master (root-commit) bf720d0] Informações sobre a alteração realizadas nesse commit
   1 file changed, 0 insertions(+), 0 deletions(-)
   create mode 100644 teste
+  </pre></code>
+
+
+  <h3>Visualizando commits realizados</h3>
+  <p align="justify">É possível verificar o histórico de commits realizados dentro de um projeto Git, visualizando o hash do commit, o autor, data e a sua descrição. Para isso é usado o comando <i>git log</i></p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ git log
+  commit bf720d0041c7ba81aaa78f255f683820259d34ad (HEAD -> master)
+  Author: Cleverson Nahum &lt;cleversonahum@gmail.com&gt;
+  Date:   Fri Mar 22 22:09:59 2019 -0300
+  Informações sobre a alteração realizadas nesse commit
   </pre></code>
 </div>
