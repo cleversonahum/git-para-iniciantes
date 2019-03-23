@@ -72,4 +72,13 @@
   (use "git rm --cached &lt;file&gt;..." to unstage)
 	new file: teste
   </pre></code>
+
+  <h3>Salvando alterações no repositório Git (Commit)</h3>
+  <p align="justify">Para que as alterações adicionadas a área de ensaio sejam salvas no repositório Git de fato é necessário executar um <i>git commit</i></p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  git commit -m "Informações sobre a alteração realizadas nesse commit"
+  [master (root-commit) bf720d0] Informações sobre a alteração realizadas nesse commit
+  1 file changed, 0 insertions(+), 0 deletions(-)
+  create mode 100644 teste
+  </pre></code>
 </div>
