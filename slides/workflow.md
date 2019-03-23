@@ -95,7 +95,7 @@
   </pre></code>
 
 
-  <h3>Removendo arquivo commitado</h3>
+  <h3>Removendo arquivo comitado</h3>
   <p align="justify">Quando um arquivo é adicionado em um commit possível remove-lo usando o comando <i>git rm &lt;Nome_do_arquivo&gt;</i>, dessa forma o arquivo será removido tanto da pasta quanto do repositório git, necessitando que a remoção seja comitada.</p>
   <pre style="white-space: pre-wrap;"><code data-trim>
   $ touch teste2
