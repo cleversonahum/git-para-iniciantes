@@ -93,4 +93,24 @@
   Date:   Fri Mar 22 22:09:59 2019 -0300
   Informações sobre a alteração realizadas nesse commit
   </pre></code>
+
+
+  <h3>Removendo arquivo commitado</h3>
+  <p align="justify">Quando um arquivo é adicionado em um commit possível remove-lo usando o comando <i>git rm &lt;Nome_do_arquivo&gt;</i>, dessa forma o arquivo será removido tanto da pasta quanto do repositório git, necessitando que a remoção seja comitada.</p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ touch teste2
+  $ git add teste2
+  $ git commit -m "adicionando teste2"
+  $ git rm teste2
+  $ git status
+  On branch master
+  Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+	deleted: teste2
+  </pre></code>
+
+
+  <h3>Revisando</h3>
+  <img src="img/workflow/git-stages.png" style="background:none; border:none; box-shadow:none;" />
+  <p>Fonte: https://blog.osteele.com/2008/05/my-git-workflow/</p>
 </div>
