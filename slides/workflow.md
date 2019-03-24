@@ -127,7 +127,16 @@
 
 
   <h3>Revertendo um commit</h3>
-  <p align="justify">Quando comitamos uma alteração indesejada sem querer ou com uma mensagem de commit errada pordemos reverter o commit usando também o <i>.git reset</i></p>
+  <p align="justify">Quando comitamos uma alteração indesejada sem querer ou com uma mensagem de commit errada pordemos reverter o commit usando também o <i>git reset --soft</i> para desfazer o commit voltando os arquivos para a zona de ensaio</p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ touch teste4
+  $ git add teste4
+  $ git commit -m "teste"
+  $ git log
+  $ git reset --soft HEAD
+  & git log #Mostrando que o commit foi desfeito
+  & git status #Arquivos do commit desfeito voltam para a zona de ensaio
+  </pre></code>
 
 
   <h3>Revisando</h3>
