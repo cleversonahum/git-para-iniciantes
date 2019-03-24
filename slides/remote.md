@@ -40,7 +40,7 @@
   <pre style="white-space: pre-wrap;"><code data-trim>
   $ git pull origin master
   From github.com:cleversonahum/git-para-iniciantes
-  * branch            master     -> FETCH_HEAD
+  * branch master -> FETCH_HEAD
   Already up to date.
   </code></pre>
 
