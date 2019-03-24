@@ -139,6 +139,18 @@
   </pre></code>
 
 
+  <h3>Revertendo um commit/2</h3>
+  <p align="justify">Ainda é possível desfazer um commit sem que as alterações voltem para a área de ensaio usando <i>git reset --hard</i> CUIDADO!</p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ touch teste5
+  $ git commit -a -m "teste a ser deletado"
+  $ git log
+  $ git reset --hard HEAD^
+  & git log #Mostrando que o commit foi deletado
+  & git status #Arquivos do commit desfeito não voltaram para a zona de ensaio
+  </pre></code>
+
+
   <h3>Revisando</h3>
   <img src="img/workflow/git-stages.png" style="background:none; border:none; box-shadow:none;" />
   <p>Fonte: https://blog.osteele.com/2008/05/my-git-workflow/</p>
