@@ -96,7 +96,7 @@
 
 
   <h3>Removendo arquivo comitado</h3>
-  <p align="justify">Quando um arquivo é adicionado em um commit possível remove-lo usando o comando <i>git rm &lt;Nome_do_arquivo&gt;</i>, dessa forma o arquivo será removido tanto da pasta quanto do repositório git, necessitando que a remoção seja comitada.</p>
+  <p align="justify">Quando um arquivo é adicionado em um ensaio de commit é possível remove-lo usando o comando <i>git rm &lt;Nome_do_arquivo&gt;</i>, dessa forma o arquivo será removido tanto da pasta quanto do repositório git, necessitando que a remoção seja comitada.</p>
   <pre style="white-space: pre-wrap;"><code data-trim>
   $ touch teste2
   $ git add teste2
@@ -108,6 +108,26 @@
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 	deleted: teste2
   </pre></code>
+
+
+  <h3>Retirando arquivos adicionados ou revertendo commits</h3>
+  <p align="justify">O comando <i>git reset</i> permite desfazer alterações adionadas para a zona de ensaio ou para reverter commits para estado anteriores.</p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ touch teste3
+  $ git add teste3
+  $ git reset teste3
+  $ git status
+  On branch master
+  No commits yet
+  Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+	teste3
+  nothing added to commit but untracked files present (use "git add" to track)
+  </pre></code>
+
+
+  <h3>Revertendo um commit</h3>
+  <p align="justify">Quando comitamos uma alteração indesejada sem querer ou com uma mensagem de commit errada pordemos reverter o commit usando também o <i>.git reset</i></p>
 
 
   <h3>Revisando</h3>
