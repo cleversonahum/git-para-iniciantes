@@ -44,4 +44,20 @@
   Already up to date.
   </code></pre>
 
+
+  <h3>Enviando as alterações locais para o remoto</h3>
+  <p align="justify">Ao realizar as alterações localmente, pode-se enviar as alterações para o repositório remoto para que todos possam ter acesso através da execução do comando <i>git push &lt;repositório-remoto&gt; &lt;branch-local&gt;</i></p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ git push origin master
+  Enumerating objects: 24, done.
+  Counting objects: 100% (24/24), done.
+  Delta compression using up to 4 threads
+  Compressing objects: 100% (20/20), done.
+  Writing objects: 100% (20/20), 2.81 KiB | 411.00 KiB/s, done.
+  Total 20 (delta 14), reused 0 (delta 0)
+  remote: Resolving deltas: 100% (14/14), completed with 4 local objects.
+  To github.com:cleversonahum/git-para-iniciantes.git
+  0964823..6266a1d  master -> master
+  </code></pre>
+
 </div>
