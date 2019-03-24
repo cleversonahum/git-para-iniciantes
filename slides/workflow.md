@@ -10,7 +10,7 @@
   (ArchLinux) pacman -S git
   (Ubuntu) apt install git
   (Fedora) yum install git
-  </pre></code>
+  </code></pre>
 
 
   <h3>Inicializando um repositório Git</h3>
@@ -54,7 +54,7 @@
   (use "git add &lt;file&gt;..." to include in what will be committed)
 	teste
   nothing added to commit but untracked files present (use "git add" to track)
-  </pre></code>
+  </code></pre>
 
 
   <h3>Relembrando os 3 estágios</h3>
@@ -71,7 +71,7 @@
   Changes to be committed:
   (use "git rm --cached &lt;file&gt;..." to unstage)
 	new file: teste
-  </pre></code>
+  </code></pre>
 
 
   <h3>Salvando alterações no repositório Git (Commit)</h3>
@@ -81,7 +81,7 @@
   [master (root-commit) bf720d0] Informações sobre a alteração realizadas nesse commit
   1 file changed, 0 insertions(+), 0 deletions(-)
   create mode 100644 teste
-  </pre></code>
+  </code></pre>
 
 
   <h3>Visualizando commits realizados</h3>
@@ -92,7 +92,7 @@
   Author: Cleverson Nahum &lt;cleversonahum@gmail.com&gt;
   Date:   Fri Mar 22 22:09:59 2019 -0300
   Informações sobre a alteração realizadas nesse commit
-  </pre></code>
+  </code></pre>
 
 
   <h3>Removendo arquivo comitado</h3>
@@ -107,7 +107,7 @@
   Changes to be committed:
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 	deleted: teste2
-  </pre></code>
+  </code></pre>
 
 
   <h3>Retirando arquivos adicionados ou revertendo commits</h3>
@@ -123,7 +123,7 @@
   (use "git add &lt;file&gt;..." to include in what will be committed)
 	teste3
   nothing added to commit but untracked files present (use "git add" to track)
-  </pre></code>
+  </code></pre>
 
 
   <h3>Revertendo um commit</h3>
@@ -136,7 +136,7 @@
   $ git reset --soft HEAD
   & git log #Mostrando que o commit foi desfeito
   & git status #Arquivos do commit desfeito voltam para a zona de ensaio
-  </pre></code>
+  </code></pre>
 
 
   <h3>Revertendo um commit/2</h3>
@@ -148,7 +148,7 @@
   $ git reset --hard HEAD^
   & git log #Mostrando que o commit foi deletado
   & git status #Arquivos do commit desfeito não voltaram para a zona de ensaio
-  </pre></code>
+  </code></pre>
 
 
   <h3>Revisando</h3>
