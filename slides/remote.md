@@ -60,4 +60,33 @@
   0964823..6266a1d  master -> master
   </code></pre>
 
+
+  <h2>Git Branches: Uma alternativa para separar o trabalho</h2>
+  EXPLICAR
+
+
+  <h3>Gerenciando Branches</h3>
+  <p align="justify">Para gerenciar branches (criar, deletar, listar...) utilizamos o comando <i>git branch</i></p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ git branch teste #Adicionando branch com o nome teste
+  $ git branch -v #Listando as branchs existentes
+  * master 533b0fc teste
+  teste  533b0fc teste
+  $ git branch -d teste
+  $ git branch -v
+  * master 533b0fc teste
+  </code></pre>
+
+
+  <h3>Trocando de branch ou de commit</h3>
+  <p align="justify">O comando anterior serve para gerenciar branches, mas para mudar a branch sendo usada atualmente precisamos utilizar o comando <i>git checkout nome-branch</i> para trocar para uma branch específica ou para um commit específico usando <i>git checkout hash-commit</i></p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ git branch teste #Adicionando branch com o nome teste
+  $ git checkout teste
+  Switched to branch 'teste'
+  $ git branch -v
+  master 533b0fc teste
+  * teste  533b0fc teste
+  </code></pre>
+
 </div>
