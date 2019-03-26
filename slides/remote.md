@@ -77,6 +77,10 @@
   <img src="img/remote/branch-and-history.png" style="background:none; border:none; box-shadow:none;" />
 
 
+  <h3>Criando uma branch</h3>
+  <img src="img/remote/head-to-master.png" style="background:none; border:none; box-shadow:none;" />
+
+
   <h3>Gerenciando Branches</h3>
   <p align="justify">Para gerenciar branches (criar, deletar, listar...) utilizamos o comando <i>git branch</i></p>
   <pre style="white-space: pre-wrap;"><code data-trim>
@@ -100,5 +104,36 @@
   master 533b0fc teste
   * teste  533b0fc teste
   </code></pre>
+
+
+  <img src="img/remote/head-to-testing.png" style="background:none; border:none; box-shadow:none;" />
+
+
+  <h3>Realizando commits na branch criada</h3>
+  <p align="justify">Ao realizar um commit na branch criada, a branch master não compartilhará mais as alterações feitas.</p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ touch teste2
+  $ git commit -a -m "teste2"
+  $ git log
+  $ git checkout master
+  $ git log
+  </code></pre>
+
+
+  <img src="img/remote/advance-testing.png" style="background:none; border:none; box-shadow:none;" />
+
+
+  <h3>Realizando commits na branch master </h3>
+  <p align="justify">Ao realizar um commit na branch master, tendo criado uma branch teste antes e comitado alterações, estamos criando histórias paralelas.</p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ touch teste3
+  $ git commit -a -m "teste3"
+  $ git log
+  $ git checkout teste
+  $ git log
+  </code></pre>
+
+
+<img src="img/remote/advance-master.png" style="background:none; border:none; box-shadow:none;" />  
 
 </div>
