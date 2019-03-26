@@ -62,7 +62,19 @@
 
 
   <h2>Git Branches: Uma alternativa para separar o trabalho</h2>
-  EXPLICAR
+  <p align="justify">Para dividir a implementação de diferentes funções sem afetar o código que já está funcionando usa-se a função de Branch oferecida pelo Git. Com ela começamos a enxergar o código como uma árvore, na qual os galhos(Branches) vão surgindo das trilhas principais.</p>
+
+
+  <h3>Revisando estrutura de commits</h3>
+  <img src="img/remote/commit-and-tree.png" style="background:none; border:none; box-shadow:none;" />
+
+
+  <h3>Ligação entre commits</h3>
+  <img src="img/remote/commit-and-tree.png" style="background:none; border:none; box-shadow:none;" />
+
+
+  <h3>Disposição geral</h3>
+  <img src="img/remote/branch-and-history.png" style="background:none; border:none; box-shadow:none;" />
 
 
   <h3>Gerenciando Branches</h3>
