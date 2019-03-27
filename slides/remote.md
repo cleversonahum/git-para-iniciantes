@@ -22,7 +22,7 @@
   * branch  master -> FETCH_HEAD
   </code></pre>
 
-  
+
   <h3>Mesclando alterações do remoto no repositório local</h3>
   <p align="justify">As alterações são baixadas do remoto para o repositório local, mas elas não são integradas automaticamente nele, ficando no repositório <i>origin/&lt;nome-repo&gt;</i>. Para que as alterações do remoto sejam mescladas as alterações do repositório local usamos o comando <i>git merge &lt; branch-remoto-ou-local&gt; &lt;branch-local&gt;</i></p>
   <pre style="white-space: pre-wrap;"><code data-trim>
@@ -123,7 +123,7 @@
   <img src="img/remote/advance-testing.png" style="background:none; border:none; box-shadow:none;" />
 
 
-  <h3>Realizando commits na branch master </h3>
+  <h3>Realizando commits na branch master</h3>
   <p align="justify">Ao realizar um commit na branch master, tendo criado uma branch teste antes e comitado alterações, estamos criando histórias paralelas.</p>
   <pre style="white-space: pre-wrap;"><code data-trim>
   $ touch teste3
@@ -134,6 +134,12 @@
   </code></pre>
 
 
-<img src="img/remote/advance-master.png" style="background:none; border:none; box-shadow:none;" />  
+<img src="img/remote/advance-master.png" style="background:none; border:none; box-shadow:none;" />
+
+
+<h3>Merge de uma branch</h3>
+
+
+<h3>Git Rebase: </h3>
 
 </div>
