@@ -113,7 +113,8 @@
   <p align="justify">Ao realizar um commit na branch criada, a branch master não compartilhará mais as alterações feitas.</p>
   <pre style="white-space: pre-wrap;"><code data-trim>
   $ touch teste2
-  $ git commit -a -m "teste2"
+  $ git add .
+  $ git commit -m "teste2"
   $ git log
   $ git checkout master
   $ git log
@@ -138,8 +139,109 @@
 
 
 <h3>Merge de uma branch</h3>
+<p align="justify">Ao desenvolvermos a correção de um bug ou desenvolvimento de uma nova funcionalidade sobre o projeto principal, cria-se uma branch para trabalhar e após isso (com a solução implementada) é necessário implementar as alterações na trilha principal do projeto (Master).</p>
 
 
-<h3>Git Rebase: </h3>
+<img src="img/remote/basic-branching-4.png" style="background:none; border:none; box-shadow:none;" />
+
+
+<img src="img/remote/basic-branching-5.png" style="background:none; border:none; box-shadow:none;" />
+
+
+<img src="img/remote/basic-merging-1.png" style="background:none; border:none; box-shadow:none;" />
+
+
+<img src="img/remote/basic-merging-2.png" style="background:none; border:none; box-shadow:none;" />
+
+
+<h3>Merge de uma branch na prática</h3>
+<pre style="white-space: pre-wrap;"><code data-trim>
+  $ touch main
+  $ git add .
+  $ git commit -m "trilha principal"
+  $ git checkout -b fix1 #Cria uma branch chamada "fix1" e muda para ela
+  Switched to a new branch 'fix1'
+  $ touch fix
+  $ git add .
+  $ git commit -m "corrigindo bug"
+  $ ls
+  fix  main
+  $ git checkout master
+  Switched to branch 'master'
+  $ ls
+  main
+  $ git merge fix1
+  Updating a2f1e5b..d9b5a11
+  Fast-forward
+  fix | 0
+  1 file changed, 0 insertions(+), 0 deletions(-)
+  create mode 100644 fix
+  $ ls
+  main fix
+  </code></pre>
+
+
+<h3>Git Rebase: Alternativa ao merge para integrar mudanças</h3>
+<p align="justify">Reaplica alterações/commits realizados anteriormente em um determinado branch na branch selecionada. Dessa forma as alterações são feitas de uma forma linear, em contraponto ao <i>git merge</i></p>
+
+
+<img src="img/remote/basic-rebase-1.png" style="background:none; border:none; box-shadow:none;" />
+
+
+<h3>Git Merge</h3>
+<img src="img/remote/basic-rebase-2.png" style="background:none; border:none; box-shadow:none;" />
+
+
+<h3>Git Rebase</h3>
+<img src="img/remote/basic-rebase-3.png" style="background:none; border:none; box-shadow:none;" />
+
+
+<h3>Git Merge depois do rebase</h3>
+<img src="img/remote/basic-rebase-4.png" style="background:none; border:none; box-shadow:none;" />
+
+
+<h3>Usando o comando Git Rebase</h3>
+<pre style="white-space: pre-wrap;"><code data-trim>
+  $ touch teste6
+  $ git add .
+  $ git commit -m "commit para o master"
+  $ git checkout -b fix
+  $ touch teste7
+  $ git add .
+  $ git commit -m "alteração para a branch"
+  $ git checkout master
+  $ touch teste8
+  $ git add .
+  $ git commit -m "alteração 2 para a master branch"
+  </code></pre>
+
+
+  <img src="img/remote/basic-rebase-1.png" style="background:none; border:none; box-shadow:none;" />
+
+
+  <h3>Continuando...</h3>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ git checkout fix
+  $ git rebase master
+  First, rewinding head to replay your work on top of it...
+  Applying: Alteração para a branch
+  </code></pre>
+
+
+  <img src="img/remote/basic-rebase-3.png" style="background:none; border:none; box-shadow:none;" />
+
+
+  <h3>Por fim o Merge na Master</h3>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  $ git checkout master
+  $ git merge fix
+  </code></pre>
+
+
+  <img src="img/remote/basic-rebase-4.png" style="background:none; border:none; box-shadow:none;" />  
+
+
+  <h3>Git Merge x Git Rebase</h3>
+  ^Note: teste
 
 </div>
