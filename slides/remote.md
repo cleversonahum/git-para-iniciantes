@@ -242,6 +242,12 @@
 
 
   <h3>Git Merge x Git Rebase</h3>
-  ^Note: teste
+  <aside class='notes' data-markdown>
+    Git merge armazena as alterações que foram realizadas de fato, quer elas mantenham uma organização ou não. Isso faz parte da história do projeto.
+
+    Git rebase pode deixar a hiustória do projeto mais bem organizada
+
+    NUNCA USE O GIT REBASE PARA ALTERAÇÔES QUE JÁ FORAM ENVIADAS PARA O REMOTE (GIT PUSH)
+  </aside>
 
 </div>
