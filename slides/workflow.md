@@ -119,6 +119,9 @@
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 	deleted: teste2
   </code></pre>
+  <aside class='notes' data-markdown>
+    Pedir para os participantes adicionarem a alteração que deleta o arquivo e commitá-la
+  </aside>
 
 
   <h3>Retirando arquivos adicionados ou revertendo commits</h3>
