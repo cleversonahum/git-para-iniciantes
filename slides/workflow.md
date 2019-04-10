@@ -137,6 +137,10 @@
   </code></pre>
 
 
+  <h3>Relembrando os 3 estágios</h3>
+  <img src="img/whatis/file-stages.png" style="background:none; border:none; box-shadow:none;" />
+
+
   <h3>Revertendo um commit</h3>
   <p align="justify">Quando comitamos uma alteração indesejada sem querer ou com uma mensagem de commit errada pordemos reverter o commit usando também o <i>git reset --soft</i> para desfazer o commit voltando os arquivos para a zona de ensaio</p>
   <pre style="white-space: pre-wrap;"><code data-trim>
