@@ -138,6 +138,9 @@
 	teste3
   nothing added to commit but untracked files present (use "git add" to track)
   </code></pre>
+  <aside class='notes' data-markdown>
+    Pedir para os participantes verificarem o git status depois do git add
+  </aside>
 
 
   <h3>Relembrando os 3 estágios</h3>
