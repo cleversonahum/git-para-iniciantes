@@ -150,14 +150,16 @@
   <h3>Revertendo um commit</h3>
   <p align="justify">Quando comitamos uma alteração indesejada sem querer ou com uma mensagem de commit errada pordemos reverter o commit usando também o <i>git reset --soft</i> para desfazer o commit voltando os arquivos para a zona de ensaio</p>
   <pre style="white-space: pre-wrap;"><code data-trim>
-  $ touch teste4
-  $ git add teste4
-  $ git commit -m "teste"
+  $ git add teste3
+  $ git commit -m "teste3"
   $ git log
-  $ git reset --soft HEAD
+  $ git reset --soft HEAD^1
   & git log #Mostrando que o commit foi desfeito
   & git status #Arquivos do commit desfeito voltam para a zona de ensaio
   </code></pre>
+  <aside class='notes' data-markdown>
+    Explicar que poderia ser utilizado a notação HEAD^2 ou outro numero para reverter vários commits, ou mesmo colocar a Hash do commit
+  </aside>
 
 
   <h3>Revertendo um commit/2</h3>
