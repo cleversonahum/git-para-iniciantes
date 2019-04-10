@@ -82,6 +82,9 @@
   1 file changed, 0 insertions(+), 0 deletions(-)
   create mode 100644 teste
   </code></pre>
+  <aside class='notes' data-markdown>
+    Trazer algumas características importantes de um commit: Ser atômico, simples, resolver um problema específico. Pensar que dentro da estrutura de um projeto algumas ações precisarão ser refeitas, por isso é importante que os commits sejam o mais independentes possíveis.
+  </aside>
 
 
   <h3>Visualizando commits realizados</h3>
