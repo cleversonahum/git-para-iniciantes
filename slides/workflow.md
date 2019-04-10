@@ -87,6 +87,14 @@
   </aside>
 
 
+  <h3>Como deve ser um commit?</h3>
+  <ul>
+    <li>Mensagens claras e objetivas</li>
+    <li>Quanto menor, melhor (geralmente)</li>
+    <li>Ter o máximo de independência entre os commits</li>
+  </ul>
+
+
   <h3>Visualizando commits realizados</h3>
   <p align="justify">É possível verificar o histórico de commits realizados dentro de um projeto Git, visualizando o hash do commit, o autor, data e a sua descrição. Para isso é usado o comando <i>git log</i></p>
   <pre style="white-space: pre-wrap;"><code data-trim>
