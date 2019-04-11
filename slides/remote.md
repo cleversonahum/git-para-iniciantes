@@ -4,24 +4,25 @@
   <img src="img/remote/git-stages.png" style="background:none; border:none; box-shadow:none;" />
 
 
+  <h3>Criando um repositório no Github</h3>
+  <p align="justify">Criar um repositório no seu github com o nome que desejar. Esse repositório vai ser utilizado no aprendizado de repositórios remotos.</p>
+
+
   <h3>Adicionando Remotos para o repositório local</h3>
   <p align="justify">Para sincronizar o repositório local com um remoto, utilizaremos o comando <i>git remote</i>, que permite gerenciar os remotos. Ao executar o comando <i>git clone</i> um remoto denominado <i>origin</i> é adicionado por padrão para o servidor de onde foi feito o clone.</p>
   <pre style="white-space: pre-wrap;"><code data-trim>
   $ mkdir remote && cd remote
   $ git init
-  $ git remote add origin https://github.com/cleversonahum/git-para-iniciantes.git
+  $ git remote add origin &lt;link-repositório&gt;
   $ git remote -v
-  origin	git@github.com:cleversonahum/git-para-iniciantes.git (fetch)
-  origin	git@github.com:cleversonahum/git-para-iniciantes.git (push)
+  origin	git@&lt;link-repositório&gt;.git (fetch)
+  origin	git@&lt;link-repositório&gt;.git (push)
   </code></pre>
 
 
   <h3>Baixando Atualizações do Repositório Remoto</h3>
   <p align="justify">Para baixar as atualizações do repositório (commits feitos por outros contribuidores geralmente), basta executar o comando <i>git fetch &lt;repositório-remoto&gt; &lt;branch&gt;</i>. Lembrando que isso não altera o repositório local pois as alterações não são feitas ainda.</p>
   <pre style="white-space: pre-wrap;"><code data-trim>
-  & echo "teste" > README.md
-  $ git add .
-  $ git commit -m "cenas dos proximos capitulos"
   $ git fetch origin master
   From github.com:cleversonahum/git-para-iniciantes
   * branch  master -> FETCH_HEAD
@@ -31,22 +32,56 @@
   <h3>Mesclando alterações do remoto no repositório local</h3>
   <p align="justify">As alterações são baixadas do remoto para o repositório local, mas elas não são integradas automaticamente nele, ficando no repositório <i>origin/&lt;nome-repo&gt;</i>. Para que as alterações do remoto sejam mescladas as alterações do repositório local usamos o comando <i>git merge &lt; branch-remoto-ou-local&gt; &lt;branch-local&gt;</i></p>
   <pre style="white-space: pre-wrap;"><code data-trim>
-  $ git merge origin/master master
-  COLOCAR MAIS INFOS
+  $ git merge origin/master
+  $ git log
   </code></pre>
-
-
-  <h3>Conflito no Merge</h3>
-  <p align="justify">Isso costuma acontecer quando o repositório remoto no qual estão sendo baixadas alterações possuem divergências em relação ao repositório local. Por exemplo, uma variável no repositório local possui o valor 5 e no remoto o valor 10. Dessa forma o Git possibilita que o usuário "resolva o conflito" escolhendo as alterações de qual repositório se deseja incorporar ao ramo principal do projeto. MAIS COISA AQUI</p>
 
 
   <h3>Git pull = Git Fetch + Git Merge</h3>
   <p align="justify">O comando <i>git merge</i> é rotineiramente executado após o comando git <i>fetch</i>, por isso o comando <i>git pull &lt;repositório-remoto&gt; &lt;branch-local&gt;</i> é a junção dos dois comandos. Podem acontecer conflitos de merge que são solucionados como já explicado anteriormente.</p>
   <pre style="white-space: pre-wrap;"><code data-trim>
+  # Adicionar algum arquivo para o repositório no github pelo browser
   $ git pull origin master
-  From github.com:cleversonahum/git-para-iniciantes
-  * branch master -> FETCH_HEAD
-  Already up to date.
+  From github.com:&lt;user&gt;/&lt;repositório&gt;
+  ...
+  Updating fa35118..82ac5a4
+  Fast-forward
+  teste2 | 1 +
+  1 file changed, 1 insertion(+)
+  create mode 100644 teste2
+  </code></pre>
+
+
+  <h3>Conflito no Merge</h3>
+  <p align="justify">Isso costuma acontecer quando o repositório remoto no qual estão sendo baixadas alterações possuem divergências em relação ao repositório local. Por exemplo, uma variável no repositório local possui o valor 5 e no remoto o valor 10. Dessa forma o Git possibilita que o usuário "resolva o conflito" escolhendo as alterações de qual repositório se deseja incorporar ao ramo principal do projeto.</p>
+
+
+  <h3>Criando o conflito</h3>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  # Adicionar outro arquivo para o repositório no github pelo browser
+  # Criar um arquivo de mesmo nome localmente na sua pasta
+  $ echo "teste_local" > &lt;nome do arquivo&gt;
+  $ git add .
+  $ git commit -m "Conflito futuro"
+  $ git pull origin master
+  ...
+  CONFLICT (add/add): Merge conflict in teste3
+  Auto-merging teste3
+  Automatic merge failed; fix conflicts and then commit the result.
+  </code></pre>
+
+
+  <h3>Resolvendo o conflito</h3>
+  <p align="justify">É necessário abrir o arquivo no qual ocorreu o conflito com algum editor de texto e após isso escolher a alteração de qual commit deve ser mantida</p>
+  <pre style="white-space: pre-wrap;"><code data-trim>
+  <<<<<<< HEAD
+  teste_local
+  =======
+  teste_remoto
+  >>>>>>> 4db579b61f0753ce2c30e920ffd99ac2fee0e38a
+  $ git status
+  $ git add .
+  $ git commit -m "resolvendo conflito"
   </code></pre>
 
 
@@ -61,7 +96,7 @@
   Writing objects: 100% (20/20), 2.81 KiB | 411.00 KiB/s, done.
   Total 20 (delta 14), reused 0 (delta 0)
   remote: Resolving deltas: 100% (14/14), completed with 4 local objects.
-  To github.com:cleversonahum/git-para-iniciantes.git
+  To github.com:&lt;user&gt;/&lt;repositório&gt.git
   0964823..6266a1d  master -> master
   </code></pre>
 
