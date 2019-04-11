@@ -13,6 +13,10 @@
   </code></pre>
 
 
+  <h3>Criando uma conta no Github</h3>
+  <p align="justify">Acessar o site <a href="https://www.github.com">www.github.com</a> e criar uma conta do serviço para ser usada ao longo do minicurso.</p>
+
+
   <h3>Clonando um repositório existente</h3>
   <p align="justify">É possível inicializar o repositório através de plataformas como o github e só cloná-lo ou mesmo clonar um repositório de outro contribuidor. Para realizar a clonagem do repositório utiliza-se o comando <i>git clone &lt;URL do Repositório&gt;</i></p>
   <pre style="white-space: pre-wrap;"><code data-trim>
