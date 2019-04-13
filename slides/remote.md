@@ -121,10 +121,16 @@
 
   <h3>Disposição geral</h3>
   <img src="img/remote/branch-and-history.png" style="background:none; border:none; box-shadow:none;" />
+  <aside class='notes' data-markdown>
+    Enxergando além das estruturas apresentadas, é possível perceber que o git sempre cria uma branch principal chamada master e com uma tag 1.0, e o HEAD fica apontando pro seu trabalho atual.
+  </aside>
 
 
   <h3>Criando uma branch</h3>
   <img src="img/remote/head-to-master.png" style="background:none; border:none; box-shadow:none;" />
+  <aside class='notes' data-markdown>
+    Criando uma branch para iniciar um trabalho paralelo, ao criar uma branch ela compartilha a referência da branch na qual foi criada. Dessa forma, a branch "testing" começa tendo como base a master (f30ab)
+  </aside>
 
 
   <h3>Gerenciando Branches</h3>
