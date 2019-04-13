@@ -107,10 +107,16 @@
 
   <h3>Revisando estrutura de commits</h3>
   <img src="img/remote/commit-and-tree.png" style="background:none; border:none; box-shadow:none;" />
+  <aside class='notes' data-markdown>
+    A imagem apresenta três componentes, o commit em si armazenando as informações da árvore e arquivos e gerando um hash único, depois temos a árvore em si onde fica a listagem dos arquivos que pertencem aquele commit e posteriormente temos 
+  </aside>
 
 
   <h3>Ligação entre commits</h3>
-  <img src="img/remote/commit-and-tree.png" style="background:none; border:none; box-shadow:none;" />
+  <img src="img/remote/commits-and-parents.png" style="background:none; border:none; box-shadow:none;" />
+  <aside class='notes' data-markdown>
+    A imagem apresenta a forma como os commits estão ligados entre si e os seus respectivos snapshots
+  </aside>
 
 
   <h3>Disposição geral</h3>
