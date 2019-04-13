@@ -159,14 +159,17 @@
 
 
   <img src="img/remote/head-to-testing.png" style="background:none; border:none; box-shadow:none;" />
+  <aside class='notes' data-markdown>
+    O HEAD mudou para a branch que criamos, logo agora estamos fazendo alteração sobre ele
+  </aside>
 
 
   <h3>Realizando commits na branch criada</h3>
   <p align="justify">Ao realizar um commit na branch criada, a branch master não compartilhará mais as alterações feitas.</p>
   <pre style="white-space: pre-wrap;"><code data-trim>
-  $ touch teste2
+  $ touch teste3
   $ git add .
-  $ git commit -m "teste2"
+  $ git commit -m "teste3"
   $ git log
   $ git checkout master
   $ git log
