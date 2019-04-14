@@ -154,7 +154,7 @@
   Switched to branch 'teste'
   $ git branch -v
   master 533b0fc teste
-  * teste  533b0fc teste
+  * teste 533b0fc teste
   </code></pre>
 
 
@@ -177,13 +177,17 @@
 
 
   <img src="img/remote/advance-testing.png" style="background:none; border:none; box-shadow:none;" />
+  <aside class='notes' data-markdown>
+    A imagem mostra como o commit criado está visível apenas na branch que estavamos trabalhando
+  </aside>
 
 
   <h3>Realizando commits na branch master</h3>
   <p align="justify">Ao realizar um commit na branch master, tendo criado uma branch teste antes e comitado alterações, estamos criando histórias paralelas.</p>
   <pre style="white-space: pre-wrap;"><code data-trim>
-  $ touch teste3
-  $ git commit -a -m "teste3"
+  $ touch teste4
+  $ git add .
+  $ git commit -m "teste4"
   $ git log
   $ git checkout teste
   $ git log
@@ -191,6 +195,9 @@
 
 
 <img src="img/remote/advance-master.png" style="background:none; border:none; box-shadow:none;" />
+<aside class='notes' data-markdown>
+    A imagem mostra como as branchs criaram histórias paralelas
+</aside>
 
 
 <h3>Merge de uma branch</h3>
@@ -198,41 +205,40 @@
 
 
 <img src="img/remote/basic-branching-4.png" style="background:none; border:none; box-shadow:none;" />
+<aside class='notes' data-markdown>
+    A imagem mostra uma história com 3 branches ativas
+</aside>
 
 
 <img src="img/remote/basic-branching-5.png" style="background:none; border:none; box-shadow:none;" />
+<aside class='notes' data-markdown>
+    Como a branch 'hotfix' foi baseada na master anterior, as alterações foram apenas adicionadas
+</aside>
 
 
 <img src="img/remote/basic-merging-1.png" style="background:none; border:none; box-shadow:none;" />
+<aside class='notes' data-markdown>
+    Nessa situação temos branches com histórias paralelas, que não são mais baseadas em commits comuns.
+</aside>
 
 
 <img src="img/remote/basic-merging-2.png" style="background:none; border:none; box-shadow:none;" />
+<aside class='notes' data-markdown>
+    Se cria um commit com o merge das duas branches, uma espécie de triangulação.
+</aside>
 
 
 <h3>Merge de uma branch na prática</h3>
 <pre style="white-space: pre-wrap;"><code data-trim>
-  $ touch main
-  $ git add .
-  $ git commit -m "trilha principal"
-  $ git checkout -b fix1 #Cria uma branch chamada "fix1" e muda para ela
-  Switched to a new branch 'fix1'
-  $ touch fix
-  $ git add .
-  $ git commit -m "corrigindo bug"
-  $ ls
-  fix  main
   $ git checkout master
   Switched to branch 'master'
-  $ ls
-  main
-  $ git merge fix1
-  Updating a2f1e5b..d9b5a11
-  Fast-forward
-  fix | 0
+  Your branch is ahead of 'origin/master' by 1 commit.
+  $ git merge teste
+  Merge made by the 'recursive' strategy.
+  teste3 | 0
   1 file changed, 0 insertions(+), 0 deletions(-)
-  create mode 100644 fix
-  $ ls
-  main fix
+  create mode 100644 teste3
+  $ git log
   </code></pre>
 
 
@@ -257,17 +263,14 @@
 
 <h3>Usando o comando Git Rebase</h3>
 <pre style="white-space: pre-wrap;"><code data-trim>
-  $ touch teste6
-  $ git add .
-  $ git commit -m "commit para o master"
   $ git checkout -b fix
-  $ touch teste7
+  $ touch teste5
   $ git add .
   $ git commit -m "alteração para a branch"
   $ git checkout master
-  $ touch teste8
+  $ touch teste6
   $ git add .
-  $ git commit -m "alteração 2 para a master branch"
+  $ git commit -m "alteração para a master branch"
   </code></pre>
 
 
