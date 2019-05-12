@@ -27,17 +27,14 @@
   <h2>Tipos de SCV:</h2>
   <h3 align="left">SCV Local:</h3>
   <img src="img/history/scv-local.png" style="background:none; border:none; box-shadow:none;" />
-  <p>Fonte: <a href="https://git-scm.com/book/en/v1/Getting-Started-About-Version-Control">Git Website</a></p>
 
 
   <h3 align="left">SCV Centralizado:</h3>
   <img src="img/history/scv-central.png" style="background:none; border:none; box-shadow:none;" />
-  <p>Fonte: <a href="https://git-scm.com/book/en/v1/Getting-Started-About-Version-Control">Git Website</a></p>
 
 
   <h3 align="left">SCV Distribuído:</h3>
   <img src="img/history/scv-distr.png" style="background:none; border:none; box-shadow:none;" />
-  <p>Fonte: <a href="https://git-scm.com/book/en/v1/Getting-Started-About-Version-Control">Git Website</a></p>
 
 
   <h2>Linux e SVC</h2>

@@ -5,13 +5,13 @@
 
 
   <h2>O que significa Git?</h2>
-  <p align="justify"><blockquote cite="https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README">
+  <p align="justify"><blockquote style="font-size:28px;" cite="https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README">
   Git pode significar qualquer coisa, dependendo do seu humor:
   <ul>
     <li>3 letras aleatórias que não tinham sido usadas por comandos UNIX</li>
     <li>Estúpido/Desprezível (expressão)</li>
     <li>Rastreador de Informações Globais (Você está de bom humor)</li>
-  </ul>
+  </ul> <br />
   Um estúpido (mas extremamente rápido) gerenciador de conteúdo de diretórios. Não faz muito, mas faz eficientemente.
   </blockquote>- Linus Torvalds</p>
 
