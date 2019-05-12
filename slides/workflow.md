@@ -176,8 +176,4 @@
   & git status #Arquivos do commit desfeito não voltaram para a zona de ensaio
   </code></pre>
 
-
-  <h3>Revisando</h3>
-  <img src="img/workflow/git-stages.png" style="background:none; border:none; box-shadow:none;" />
-  <p>Fonte: https://blog.osteele.com/2008/05/my-git-workflow/</p>
 </div>
