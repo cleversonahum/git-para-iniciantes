@@ -13,5 +13,10 @@
     <li>Comandos Básicos</li>
     <li>Trabalhando com repositórios remotos</li>
     <li>Conclusão</li>
-  </ol> 
+  </ol>
+
+
+  <h2>Introdução</h2>
+  <p align="justify">Ao longo do minicurso serão apresentados os comandos básicos e os príncipios de funcionamento da ferramenta Git. De forma a trabalhar os conceitos e a prática.</p>
+  
 </div>
