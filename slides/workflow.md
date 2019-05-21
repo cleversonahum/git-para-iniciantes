@@ -45,7 +45,7 @@
 
   <h3>Monitorando Arquivos</h3>
   <p align="justify">Ao alterarmos/deletarmos/modificarmos um arquivo é preciso realizar um commit para que as alterações sejam realizadas no repositório Git. Usando o comando <i>git status</i> é possível observar em qual dos 3 estágios possíveis estão os arquivos.</p>
-  <pre style="white-space: pre-wrap;"><code data-trim>
+  <pre style="white-space: pre-wrap;font-size:16px;"><code data-trim>
   $ git status
   On branch master
   No commits yet
@@ -54,8 +54,7 @@
   $ git status
   On branch master
   No commits yet
-  Untracked files:
-  (use "git add &lt;file&gt;..." to include in what will be committed)
+  Untracked files:(use "git add &lt;file&gt;..." to include in what will be committed)
 	teste
   nothing added to commit but untracked files present (use "git add" to track)
   </code></pre>
