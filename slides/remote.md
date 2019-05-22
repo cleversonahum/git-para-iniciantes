@@ -61,7 +61,7 @@
 
   <h3>Criando o conflito</h3>
   <pre style="white-space: pre-wrap;"><code data-trim>
-  # Adicionar outro arquivo para o repositório no github pelo browser
+  # Adicionar outro arquivo para o repositório no github pelo browser com o conteúdo "teste_remoto"
   # Criar um arquivo de mesmo nome localmente na sua pasta
   $ echo "teste_local" > &lt;nome do arquivo&gt;
   $ git add .
