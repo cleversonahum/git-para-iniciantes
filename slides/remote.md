@@ -247,6 +247,9 @@
 
 <h3>Git Rebase: Alternativa ao merge para integrar mudanças</h3>
 <p align="justify">Reaplica alterações/commits realizados anteriormente em um determinado branch na branch selecionada. Dessa forma as alterações são feitas de uma forma linear, em contraponto ao <i>git merge</i></p>
+<aside class='notes' data-markdown>
+    Quando ocorre um conflito no git rebase é necessário resolver o conflito e depois continuar com o rebase usando "git rebase --continue", para pular esse patch basta usar o "--skip" e para não realizar o rebase se usa o "--abort"
+/aside>
 
 
 <img src="img/remote/basic-rebase-1.png" style="background:none; border:none; box-shadow:none;" />
