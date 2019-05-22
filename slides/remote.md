@@ -5,7 +5,7 @@
 
 
   <h3>Criando um repositório no Github</h3>
-  <p align="justify">Criar um repositório no seu github com o nome que desejar. Esse repositório vai ser utilizado no aprendizado de repositórios remotos.</p>
+  <p align="justify">Criar um repositório no seu github com o nome que desejar e com um README. Esse repositório vai ser utilizado no aprendizado de repositórios remotos.</p>
 
 
   <h3>Adicionando Remotos para o repositório local</h3>
