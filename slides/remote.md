@@ -27,6 +27,9 @@
   From github.com:cleversonahum/git-para-iniciantes
   * branch  master -> FETCH_HEAD
   </code></pre>
+  <aside class='notes' data-markdown>
+    Caso ocorra um erro com https no windows, basta remover o remote e adicionar novamente
+</aside>
 
 
   <h3>Mesclando alterações do remoto no repositório local</h3>
