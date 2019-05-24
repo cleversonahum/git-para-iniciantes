@@ -6,17 +6,17 @@
 
 
   <h2>Agenda</h2>
-  <ol type="1">
-    <li>Introdução</li>
+  <ul>
+    <li>Objetivos do minicurso</li>
     <li>Sistemas de Controle de Versão</li>
     <li>O que é Git e seu príncipio de Funcionamento</li>
     <li>Comandos Básicos</li>
     <li>Trabalhando com repositórios remotos</li>
     <li>Conclusão</li>
-  </ol>
+  </ul>
 
 
-  <h2>Introdução</h2>
-  <p align="justify">Ao longo do minicurso serão apresentados os comandos básicos e os príncipios de funcionamento da ferramenta Git. De forma a trabalhar os conceitos e a prática.</p>
+  <h2>Objetivos do minicurso</h2>
+  <p align="justify">O minicurso tem como objetivo apresentar os comandos básicos e os príncipios de funcionamento da ferramenta Git, de forma a trabalhar o conceito e prática da ferramenta.</p>
   
 </div>
