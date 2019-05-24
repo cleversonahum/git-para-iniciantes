@@ -9,7 +9,7 @@
   <ul>
     <li>Objetivos do minicurso</li>
     <li>Sistemas de Controle de Versão</li>
-    <li>O que é Git e seu príncipio de Funcionamento</li>
+    <li>Git e seu príncipio de Funcionamento</li>
     <li>Comandos Básicos</li>
     <li>Trabalhando com repositórios remotos</li>
     <li>Conclusão</li>
