@@ -25,11 +25,11 @@
   <pre style="white-space: pre-wrap;"><code data-trim>
   $ git fetch origin master
   From github.com:cleversonahum/git-para-iniciantes
-  * branch  master -> FETCH_HEAD
+  *branch master -> FETCH_HEAD
   </code></pre>
   <aside class='notes' data-markdown>
     Caso ocorra um erro com https no windows, basta remover o remote e adicionar novamente
-</aside>
+  </aside>
 
 
   <h3>Mesclando alterações do remoto no repositório local</h3>
